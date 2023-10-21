@@ -1,4 +1,5 @@
 import random
+word_list = ["strawberry", "mango", "apple", "orange", "blueberry"]
 
 class Hangman:
 
@@ -17,11 +18,11 @@ class Hangman:
             for element in self.word:
                 if element == guess:
                     self.word_guessed[self.word.find(guess)] = guess
+            self.num_letters -= 1
         else:
             self.num_lives -=1
             print(f"Sorry, {guess} is not in the word.")
             print(f"You have {self.num_lives} lives left.")
-        self.num_letters -= 1
             
 
     def ask_for_input(self):
@@ -34,12 +35,10 @@ class Hangman:
             self.list_of_guesses.append(guess)
             self.check_guess(guess)
                 
-                
-
-word_list = ["strawberry", "mango", "apple", "orange", "blueberry"]
 
 def play_game(word_list):
     game = Hangman(word_list = word_list, num_lives = 5)
+    print(game.word_guessed)
     while True:
         if game.num_lives == 0:
             print("You lost!")
