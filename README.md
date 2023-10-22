@@ -26,3 +26,5 @@ Once word_list has been provided and the programme ran, the player is asked to i
 - milestone_5. combines the above steps the create the overall hangman game
 
 # License information
+
+This source code is licensed under the MIT-style license.
