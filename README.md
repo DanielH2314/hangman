@@ -3,10 +3,14 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
+This is a project as part of the AI Core Data Analytics course, to consolidate skills I have developed in using Python, Github and Object Orientated Programming (OOP). Through this project I have used several core aspects of the Python language, including OOP, functions, for and while loops, if statements and lists.
+
+The project has now been completed. 
 
 # Installation Instructions
 
-
+To install the repo, enter the following after initialising git in a local repo:
+git clone https://github.com/DanielH2314/hangman.git
 
 # Usage Instructions
 
